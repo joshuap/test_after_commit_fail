@@ -8,4 +8,11 @@ describe Project do
     project.save!
   end
 
+  it 'fails when expectation is not met' do
+    project = Project.new(name: 'Testing')
+    project.should_receive(:fire_this_method).never
+    project.save!
+    # This spec should not pass!
+  end
+
 end
