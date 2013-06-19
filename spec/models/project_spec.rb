@@ -10,7 +10,7 @@ describe Project do
 
   it 'fails when expectation is not met' do
     project = Project.new(name: 'Testing')
-    project.should_receive(:fire_this_method).never
+    project.should_not_receive(:fire_this_method)
     project.save!
     # This spec should not pass!
   end

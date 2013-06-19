@@ -27,7 +27,7 @@ group :test, :development do
   gem 'rspec-rails'
 end
 
-gem 'test_after_commit', group: :test
+# gem 'test_after_commit', group: :test
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
